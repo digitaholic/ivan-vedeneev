@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Иван Веденеев — Product Designer</title>
+  <meta name="description" content="Портфолио продакт-дизайнера Ивана Веденеева. 5+ лет в агентствах, стартапах, продуктовых командах.">
+  <meta name="theme-color" content="#FFF5ED" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A0A0B" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Иван Веденеев — продуктовый дизайнер">
+  <meta property="og:description" content="Портфолио продакт-дизайнера. Ed-tech, финтех, бизнес-сообщества.">
+  <meta property="og:url" content="https://vedeneev.netlify.app/">
+  <meta property="og:image" content="https://vedeneev.netlify.app/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Иван Веденеев — продуктовый дизайнер">
+  <meta name="twitter:description" content="Портфолио продакт-дизайнера. Ed-tech, финтех, бизнес-сообщества.">
+  <meta name="twitter:image" content="https://vedeneev.netlify.app/assets/og-image.jpg">
+
+  <script src="scripts/theme-init.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="wrap">
+    <a href="#" class="nav-logo">Иван Веденеев</a>
+    <div class="nav-links">
+      <a href="#projects">Кейсы</a>
+      <a href="#about">О себе</a>
+      <a href="#contact">Контакты</a>
+      <button class="theme-btn" id="theme-toggle" aria-label="Переключить тему">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero wrap">
+  <h1 class="hero-title">
+    Продуктовый дизайнер.
+    <span class="hero-title-dim">Начинаю с&nbsp;вопроса «а&nbsp;что тут на&nbsp;самом деле ломается».</span>
+  </h1>
+  <div class="hero-foot">
+    <p class="hero-meta">5+ лет в&nbsp;ed-tech, финтехе и&nbsp;бизнес-сообществах · Москва</p>
+    <div class="hero-links">
+      <a href="#projects" class="link-arrow">Смотреть кейсы<span aria-hidden="true"> ↓</span></a>
+      <a href="https://t.me/digitaholic" class="link-arrow" target="_blank" rel="noopener">Написать в&nbsp;Telegram<span aria-hidden="true"> ↗</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section id="projects">
+  <div class="wrap">
+    <h2 class="section-title">Кейсы</h2>
+    <div class="cases">
+
+      <!-- Case 01 — Edcheck -->
+      <a href="cases/edcheck.html" class="case-card">
+        <div class="case-cover">
+          <img src="assets/edcheck/cover.jpg" alt="Edcheck — превью продукта">
+        </div>
+        <div class="case-body">
+          <div class="case-meta">01 / Edcheck · Lead Product Designer</div>
+          <h3 class="case-title">Сервис профориентации и диагностики знаний для школьников</h3>
+          <p class="case-desc">Переработал воронку тестов, страницы результатов и админку. Доходимость выросла в 1,5–2 раза, выросла конверсия в запись на консультацию.</p>
+          <div class="case-tags">
+            <span class="tag">Research</span>
+            <span class="tag">UX/UI</span>
+            <span class="tag">Design System</span>
+          </div>
+          <div class="case-cta">Читать кейс →</div>
+        </div>
+      </a>
+
+      <!-- Case 02 — Близкие -->
+      <a href="cases/blizkie.html" class="case-card">
+        <div class="case-cover">
+          <img src="assets/blizkie/cover-mockups.jpg" alt="Близкие — превью мини-апп">
+        </div>
+        <div class="case-body">
+          <div class="case-meta">02 / Близкие · Design Consulting</div>
+          <h3 class="case-title">Агрегатор баров района: как переформулированные категории изменили продукт</h3>
+          <p class="case-desc">Пришли нарисовать экраны — перекроил флоу. Категории построил от джобов пользователя, а не от названий акций.</p>
+          <div class="case-tags">
+            <span class="tag">Jobs-to-be-done</span>
+            <span class="tag">Flow Redesign</span>
+            <span class="tag">Mobile</span>
+          </div>
+          <div class="case-cta">Читать кейс →</div>
+        </div>
+      </a>
+
+    </div><!-- /.cases -->
+  </div><!-- /.wrap -->
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about wrap">
+    <div class="about-sidebar">
+      <div class="about-label">О себе</div>
+      <h2 class="about-heading">Иван Веденеев</h2>
+    </div>
+    <div class="about-body">
+      <p class="about-quote">Суперсила — структура и аналитика: изучаю пользователей, выстраиваю логику продукта, масштабирую дизайн-системы.</p>
+      <p class="about-text">Продуктовый дизайнер с 5+ годами опыта в агентствах, стартапах и продуктовых командах. Проектирую интерфейсы, строю гипотезы, работаю с метриками.</p>
+      <div class="exp-list">
+        <div class="exp-item">
+          <span class="exp-name">Maximum Education</span>
+          <span class="exp-role">Lead product designer</span>
+        </div>
+        <div class="exp-item">
+          <span class="exp-name">Escape Tech</span>
+          <span class="exp-role">UX/UI Designer — iOS / Android / Desktop</span>
+        </div>
+        <div class="exp-item">
+          <span class="exp-name">УК BART</span>
+          <span class="exp-role">Web Designer</span>
+        </div>
+        <div class="exp-item">
+          <span class="exp-name">MGCOM</span>
+          <span class="exp-role">Digital Product Designer</span>
+        </div>
+      </div>
+      <div class="edu-list">
+        <div class="edu-item">
+          <span class="edu-year">2025</span>
+          <span class="edu-name">Next Level x Mitya Osadchuk</span>
+        </div>
+        <div class="edu-item">
+          <span class="edu-year">2024</span>
+          <span class="edu-name">Пояснительный курс Илоны Саркисовой</span>
+        </div>
+        <div class="edu-item">
+          <span class="edu-year">2019</span>
+          <span class="edu-name">1 ступень школы Артёма Горбунова</span>
+        </div>
+        <div class="edu-item">
+          <span class="edu-year">2016</span>
+          <span class="edu-name">МАИ, бакалавр авиастроения</span>
+        </div>
+      </div>
+      <p class="about-channel">Веду телеграм-канал <a href="https://t.me/i_lived_here" target="_blank" rel="noopener">«Я так живу»</a> — заметки о дизайне и о том, как я работаю.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / FOOTER -->
+<footer id="contact">
+  <div class="wrap footer-inner">
+    <div class="footer-contact">
+      <a href="https://t.me/digitaholic" class="contact-link" target="_blank" rel="noopener">
+        <span class="cl-label">TG</span> @digitaholic
+      </a>
+      <a href="mailto:wedeneew@yandex.ru" class="contact-link">
+        <span class="cl-label">Email</span> wedeneew@yandex.ru
+      </a>
+    </div>
+    <div class="footer-copy">© 2026 Иван Веденеев · Москва</div>
+  </div>
+</footer>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>

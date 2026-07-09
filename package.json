@@ -1,0 +1,16 @@
+{
+  "name": "vedeneev-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "livereload": "^0.9.3",
+    "connect-livereload": "^0.6.1"
+  }
+}

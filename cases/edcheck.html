@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edcheck — Maximum Education · Иван Веденеев</title>
+  <meta name="description" content="Кейс Edcheck: переработка сервиса профориентации и диагностики знаний для школьников в Maximum Education.">
+  <meta name="theme-color" content="#FFF5ED" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A0A0B" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Edcheck — кейс · Иван Веденеев">
+  <meta property="og:description" content="Редизайн профтестирования для Maximum Education. Доходимость тестов выросла в 1,5–2 раза.">
+  <meta property="og:url" content="https://vedeneev.netlify.app/cases/edcheck.html">
+  <meta property="og:image" content="https://vedeneev.netlify.app/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Edcheck — кейс · Иван Веденеев">
+  <meta name="twitter:description" content="Редизайн профтестирования для Maximum Education. Доходимость тестов выросла в 1,5–2 раза.">
+  <meta name="twitter:image" content="https://vedeneev.netlify.app/assets/og-image.jpg">
+
+  <script src="../scripts/theme-init.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../scripts/tailwind.config.js"></script>
+
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-bg text-fg font-sans">
+
+  <nav class="sticky top-0 z-40 bg-bg/80 backdrop-blur border-b border-border">
+    <div class="max-w-content mx-auto px-5 md:px-8 py-4 flex items-center justify-between">
+      <a href="../index.html" class="font-sans text-16 font-bold">Иван Веденеев</a>
+      <div class="flex items-center gap-6">
+        <a href="../index.html#projects" class="font-sans text-14 font-medium text-secondary hidden md:inline hover:text-accent-ink transition-colors">Кейсы</a>
+        <a href="../index.html#about"    class="font-sans text-14 font-medium text-secondary hidden md:inline hover:text-accent-ink transition-colors">О себе</a>
+        <a href="../index.html#contact"  class="font-sans text-14 font-medium text-secondary hidden md:inline hover:text-accent-ink transition-colors">Контакты</a>
+        <button id="theme-toggle" aria-label="Переключить тему"
+                class="w-9 h-9 grid place-items-center border border-border rounded-full hover:border-accent-ink transition-colors">
+          <svg class="icon-moon w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sun w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <div class="max-w-content mx-auto px-5 md:px-8 pt-8 md:pt-10">
+      <a href="../index.html#projects"
+         class="group inline-flex items-center gap-3 font-mono text-14 uppercase tracking-wider text-secondary hover:text-fg transition-colors">
+        <span class="inline-block transition-transform duration-200 group-hover:-translate-x-1">←</span>
+        <span>все кейсы</span>
+      </a>
+    </div>
+
+    <!-- CASE HERO -->
+    <section class="max-w-content mx-auto px-5 md:px-8 pt-6 md:pt-10 pb-10 md:pb-14">
+      <p class="meta mb-4 md:mb-6">01 / кейс · maximum education</p>
+      <h1 class="font-sans font-bold tracking-tight text-48 md:text-72">Edcheck</h1>
+      <p class="mt-6 md:mt-8 text-18 md:text-24 text-secondary max-w-prose">
+        Сервис профориентации и диагностики знаний для школьников 8–11 классов. Переработал воронку тестов, страницы результатов и админку.
+      </p>
+
+      <dl class="mt-10 md:mt-14 grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-8 border-t border-border pt-6 md:pt-8">
+        <div>
+          <dt class="meta mb-2">роль</dt>
+          <dd class="text-16 md:text-18">Lead product designer</dd>
+        </div>
+        <div>
+          <dt class="meta mb-2">команда</dt>
+          <dd class="text-16 md:text-18">один дизайнер</dd>
+        </div>
+        <div>
+          <dt class="meta mb-2">продукт</dt>
+          <dd class="text-16 md:text-18">B2C web + админка</dd>
+        </div>
+        <div>
+          <dt class="meta mb-2">клиент</dt>
+          <dd class="text-16 md:text-18">Maximum Education</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- COVER -->
+    <section class="max-w-content mx-auto px-5 md:px-8 pb-10 md:pb-14">
+      <img src="../assets/edcheck/cover.jpg" alt="Edcheck — превью продукта и тестов" class="w-full rounded-lg" loading="lazy">
+    </section>
+
+    <!-- 01 — CONTEXT -->
+    <section class="max-w-content mx-auto px-5 md:px-8 py-10 md:py-16 border-t border-border">
+      <p class="meta mb-4 md:mb-6">01 / контекст</p>
+      <h2 class="text-24 md:text-32 font-semibold max-w-prose">Два канала, одна воронка</h2>
+      <div class="mt-6 md:mt-8 text-16 md:text-18 text-secondary max-w-prose space-y-5">
+        <p>Edcheck — сервис тестов внутри экосистемы Maximum Education. Две механики использования:</p>
+        <ul class="space-y-3">
+          <li class="flex gap-3">
+            <span class="text-accent-ink shrink-0" aria-hidden="true">—</span>
+            <span>Баннер на главной Maximum → тест → запись на индивидуальную консультацию.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-accent-ink shrink-0" aria-hidden="true">—</span>
+            <span>Менеджеры на мероприятии «Навигатор поступления» (регулярные встречи вузов с абитуриентами) предлагают тест для быстрого скрининга прямо на месте.</span>
+          </li>
+        </ul>
+        <p>Все тесты бесплатные. Сервис работал на расширение воронки.</p>
+      </div>
+    </section>
+
+    <!-- 02 — PROBLEM -->
+    <section class="max-w-content mx-auto px-5 md:px-8 py-10 md:py-16 border-t border-border">
+      <p class="meta mb-4 md:mb-6">02 / проблема</p>
+      <h2 class="text-24 md:text-32 font-semibold max-w-prose">Люди бросали тесты, а результаты не вели дальше</h2>
+      <div class="mt-6 md:mt-8 text-16 md:text-18 text-secondary max-w-prose space-y-5">
+        <p>Исходный продукт плохо конвертировал:</p>
+        <ul class="space-y-3">
+          <li class="flex gap-3"><span class="text-accent-ink shrink-0" aria-hidden="true">—</span><span>Ученики бросали тесты в процессе.</span></li>
+          <li class="flex gap-3"><span class="text-accent-ink shrink-0" aria-hidden="true">—</span><span>Страница результатов не подталкивала к следующему шагу — записи на индивидуальную консультацию.</span></li>
+          <li class="flex gap-3"><span class="text-accent-ink shrink-0" aria-hidden="true">—</span><span>Администраторам было сложно собирать новые тесты.</span></li>
+          <li class="flex gap-3"><span class="text-accent-ink shrink-0" aria-hidden="true">—</span><span>Иллюстрации не соответствовали уровню продукта.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 03 — CONSTRAINTS -->
+    <section class="max-w-content mx-auto px-5 md:px-8 py-10 md:py-16 border-t border-border">
+      <p class="meta mb-4 md:mb-6">03 / рамки</p>
+      <h2 class="text-24 md:text-32 font-semibold max-w-prose">Три жёстких ограничения</h2>
+      <div class="mt-6 md:mt-8 text-16 md:text-18 text-secondary max-w-prose space-y-5">
+        <ul class="space-y-5">
+          <li class="flex gap-3">
+            <span class="text-accent-ink shrink-0" aria-hidden="true">—</span>
+            <span><span class="text-fg font-semibold">Многоэтапный процесс.</span> Ученик мог пройти несколько тестов подряд (профориентация + диагностики по предметам) — нельзя потерять его между шагами.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-accent-ink shrink-0" aria-hidden="true">—</span>
+            <span><span class="text-fg font-semibold">Два формата результата.</span> Длинная веб-версия для самостоятельного изучения дома и короткая A4-версия для распечатки и вручения на мероприятиях.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-accent-ink shrink-0" aria-hidden="true">—</span>
+            <span><span class="text-fg font-semibold">Админка для не-продуктовых людей.</span> Сотрудники должны были собирать новые тесты без дизайнера и разработчика.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 04 — PROCESS -->
+    <section class="max-w-content mx-auto px-5 md:px-8 py-10 md:py-16 border-t border-border">
+      <p class="meta mb-4 md:mb-6">04 / процесс</p>
+      <h2 class="text-24 md:text-32 font-semibold max-w-prose">Дизайн внутри живого процесса</h2>
+      <div class="mt-6 md:mt-8 text-16 md:text-18 text-secondary max-w-prose space-y-5">
+        <p>Задачи приходили от генерального директора и распределялись по профильным отделам. Мы с продукт-менеджером забирали запросы и разбирались, что за ними стоит — что на самом деле нужно пользователям. Параллельно проверяли реализуемость с командой разработки и искали решения, оптимальные и по скорости, и по качеству. Дальше — разработка, тестирование, релиз.</p>
+      </div>
+
+      <figure class="mt-8 md:mt-12">
+        <img src="../assets/edcheck/team-process-flow.jpg" alt="Схема процесса: задача от гендира → отдел → PM и дизайнер → проверка → разработка → тест → релиз" class="w-full rounded-lg" loading="lazy">
+        <figcaption class="mt-3 meta">Схема процесса работы команды</figcaption>
+      </figure>
+
+      <div class="mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <figure>
+          <img src="../assets/edcheck/landing-banner.jpg" alt="Лендинг профтеста — точка входа с баннера Maximum Education" class="w-full rounded-lg" loading="lazy">
+          <figcaption class="mt-3 meta">Лендинг профтеста — точка входа с баннера Maximum</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/edcheck/event-navigator.jpg" alt="Мероприятие «Навигатор поступления» — офлайн-использование сервиса" class="w-full rounded-lg" loading="lazy">
+          <figcaption class="mt-3 meta">«Навигатор поступления» — менеджеры предлагали тест прямо на месте</figcaption>
+        </figure>
+      </div>
+
+      <div class="mt-10 md:mt-14 text-16 md:text-18 text-secondary max-w-prose space-y-5">
+        <p>Многошаговый тест мог включать сразу несколько блоков: профориентация, затем диагностика по предметам. Важно было не потерять пользователя между шагами. Карточка прогресса показывала, где ученик находится, и позволяла вернуться в любой момент.</p>
+      </div>
+      <div class="mt-8 md:mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <figure>
+          <img src="../assets/edcheck/test-stages.jpg" alt="Этапность прохождения теста" class="w-full rounded-lg" loading="lazy">
+          <figcaption class="mt-3 meta">Этапность прохождения</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/edcheck/progress-card-states.jpg" alt="Три состояния карточки прогресса: не начат, в процессе, завершён" class="w-full rounded-lg" loading="lazy">
+          <figcaption class="mt-3 meta">Три состояния карточки — всегда понятно, где ты</figcaption>
+        </figure>
+      </div>
+
+      <div class="mt-10 md:mt-14 text-16 md:text-18 text-secondary max-w-prose space-y-5">
+        <p>Результаты теста существовали в двух форматах. Длинная веб-версия — 9 профессий, сгруппированных в 3 профиля по 3 специальности. Добавили вертикальное меню для навигации между ними. Короткая — умещалась на лист А4: для мероприятий, где результат нужно было вручить прямо на месте.</p>
+      </div>
+      <figure class="mt-8 md:mt-10">
+        <img src="../assets/edcheck/results-long.jpg" alt="Длинная версия результатов: 9 профессий, 3 профиля, вертикальное меню навигации" class="w-full rounded-lg" loading="lazy">
+        <figcaption class="mt-3 meta">Длинный результат — 9 профессий, вертикальное меню</figcaption>
+      </figure>
+      <div class="mt-4 md:mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <figure>
+          <img src="../assets/edcheck/results-a4.jpg" alt="Короткий результат — помещается на страницу А4" class="w-full rounded-lg" loading="lazy">
+          <figcaption class="mt-3 meta">Короткий результат — страница А4</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/edcheck/profession-card.jpg" alt="Карточка профессии со страницы результатов" class="w-full rounded-lg" loading="lazy">
+          <figcaption class="mt-3 meta">Карточка профессии</figcaption>
+        </figure>
+      </div>
+
+      <figure class="mt-8 md:mt-10">
+        <img src="../assets/edcheck/history-panels.jpg" alt="Плашки из истории профтестирования пользователя" class="w-full rounded-lg" loading="lazy">
+        <figcaption class="mt-3 meta">История профтестирования</figcaption>
+      </figure>
+
+      <div class="mt-10 md:mt-14 text-16 md:text-18 text-secondary max-w-prose space-y-5">
+        <p>Когда профориентация заработала стабильно, начали масштабировать систему — запустили диагностику знаний по учебным предметам. Параллельно генерировали иллюстрации через Midjourney: это позволило обновить визуальный язык в рамках реального таймлайна разработки.</p>
+      </div>
+      <div class="mt-8 md:mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <figure>
+          <img src="../assets/edcheck/diagnostics-scaled.jpg" alt="Масштабирование системы: диагностика знаний по учебным предметам" class="w-full rounded-lg" loading="lazy">
+          <figcaption class="mt-3 meta">Масштабируем систему для диагностики знаний</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/edcheck/illustrations-midjourney.jpg" alt="Иллюстрации, сгенерированные через Midjourney" class="w-full rounded-lg" loading="lazy">
+          <figcaption class="mt-3 meta">Иллюстрации через Midjourney</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 05 — DECISIONS -->
+    <section class="max-w-content mx-auto px-5 md:px-8 py-10 md:py-16 border-t border-border">
+      <p class="meta mb-4 md:mb-6">05 / решения</p>
+      <h2 class="text-24 md:text-32 font-semibold max-w-prose">Три нетривиальных выбора</h2>
+      <div class="mt-6 md:mt-8 text-16 md:text-18 text-secondary max-w-prose space-y-8">
+        <div class="space-y-2">
+          <p class="text-fg font-semibold">Формат А4 — не компромисс, а отдельный продукт</p>
+          <p>Офлайн-формат мероприятий требовал распечатки результатов на месте. Вместо того чтобы «обрезать» веб-версию, спроектировали А4 как самостоятельный документ — с балансом информации и читаемостью при печати.</p>
+        </div>
+        <div class="space-y-2">
+          <p class="text-fg font-semibold">Иллюстрации через Midjourney</p>
+          <p>Существующая графика не соответствовала уровню продукта, а времени на иллюстратора не было. Выбрали Midjourney с последующей ручной доработкой — быстро, управляемо, достаточно хорошо для MVP.</p>
+        </div>
+        <div class="space-y-2">
+          <p class="text-fg font-semibold">Собственная база вузов и специальностей</p>
+          <p>Внешние источники не давали нужной детализации и требовали регулярного обновления. Приняли решение вести базу самостоятельно — это добавило операционную нагрузку, но дало контроль над качеством данных.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 — OUTCOME -->
+    <section class="max-w-content mx-auto px-5 md:px-8 py-10 md:py-16 border-t border-border">
+      <p class="meta mb-4 md:mb-6">06 / результат</p>
+      <h2 class="text-24 md:text-32 font-semibold max-w-prose">Что изменилось</h2>
+
+      <div class="mt-8 md:mt-12 grid grid-cols-1 md:grid-cols-3 gap-px bg-border rounded-lg overflow-hidden">
+        <div class="bg-bg px-6 py-8 md:px-8 md:py-10">
+          <p class="font-sans font-bold tracking-tight text-48 md:text-72 text-accent-fill leading-none">1,5–2×</p>
+          <p class="mt-3 text-16 md:text-18 font-semibold text-fg">Доходимость тестов до конца</p>
+          <p class="mt-2 text-14 md:text-16 text-secondary">Пользователи чаще завершают тест полностью. Оценка — по внутренним дашбордам.</p>
+        </div>
+        <div class="bg-bg px-6 py-8 md:px-8 md:py-10">
+          <p class="meta text-accent-ink mb-3">конверсия</p>
+          <p class="text-16 md:text-18 font-semibold text-fg">Запись на ИК выросла</p>
+          <p class="mt-2 text-14 md:text-16 text-secondary">После редизайна страницы результатов и встроенного CTA. Точную цифру назвать не могу, но динамика была устойчивая.</p>
+        </div>
+        <div class="bg-bg px-6 py-8 md:px-8 md:py-10">
+          <p class="meta text-accent-ink mb-3">автономность</p>
+          <p class="text-16 md:text-18 font-semibold text-fg">Воронка без участия менеджера</p>
+          <p class="mt-2 text-14 md:text-16 text-secondary">Баннер → тест → результат → запись. Сервис стал работать самостоятельно.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 — REFLECTION -->
+    <section class="max-w-content mx-auto px-5 md:px-8 py-10 md:py-16 border-t border-border">
+      <p class="meta mb-4 md:mb-6">07 / рефлексия</p>
+      <h2 class="text-24 md:text-32 font-semibold max-w-prose">Что бы я сделал иначе</h2>
+      <div class="mt-6 md:mt-8 text-16 md:text-18 text-secondary max-w-prose space-y-8">
+        <div class="space-y-2">
+          <p class="text-fg font-semibold">Раньше выстраивал бы процесс исследований</p>
+          <p>Работал без сеньора рядом — это дало самостоятельность, но иногда не хватало насмотренности в пользовательских исследованиях. Сейчас бы сразу закладывал структуру для сбора фидбека, а не делал это реактивно.</p>
+        </div>
+        <div class="space-y-2">
+          <p class="text-fg font-semibold">Чётче фиксировал бы метрики с самого начала</p>
+          <p>Часть результатов осталась без точных цифр — «видели, что стало лучше». Хочется, чтобы в следующем проекте было больше измеримого: не ради отчётности, а ради понимания, что реально работает.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-border">
+    <div class="max-w-content mx-auto px-5 md:px-8 py-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <p class="meta">© <span id="year"></span> иван веденеев</p>
+      <p class="meta">навайбкожено руками · html + tailwind</p>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
