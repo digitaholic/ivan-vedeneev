@@ -249,6 +249,24 @@ nav .wrap {
   text-transform: uppercase; color: var(--color-secondary);
   border: 1px solid var(--color-border); padding: 4px 10px; border-radius: 999px;
 }
+.tag-live {
+  color: var(--color-accent-ink);
+  border-color: var(--color-accent-ink);
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.tag-live::before {
+  content: '';
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--color-accent-ink);
+  animation: tag-live-pulse 1.8s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tag-live::before { animation: none; }
+}
+@keyframes tag-live-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .35; }
+}
 
 .case-cta {
   margin-top: 28px; display: inline-flex; align-items: center; gap: 8px;
@@ -366,6 +384,21 @@ footer {
   font-family: var(--font-mono);
   font-size: 12px;
   letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--color-fg) 3%, transparent);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--color-secondary);
 }

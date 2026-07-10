@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>R500 — электронный журнал сборки двигателя · Иван Веденеев</title>
+  <meta name="description" content="Кейс R500: электронный журнал сборки, ремонта, балансировки и испытаний роторного двигателя малой тяги вместо бумажного формуляра с одной подписью. В разработке прямо сейчас.">
+  <meta name="theme-color" content="#FFF5ED" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A0A0B" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="R500 — кейс · Иван Веденеев">
+  <meta property="og:description" content="Электронный журнал операций для сборки роторного двигателя малой тяги. В разработке: тестируем в цеху, собираю фидбек, дорабатываю.">
+  <meta property="og:url" content="https://vedeneev.netlify.app/cases/r500.html">
+  <meta property="og:image" content="https://vedeneev.netlify.app/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="R500 — кейс · Иван Веденеев">
+  <meta name="twitter:description" content="Электронный журнал операций для сборки роторного двигателя малой тяги. В разработке: тестируем в цеху, собираю фидбек, дорабатываю.">
+  <meta name="twitter:image" content="https://vedeneev.netlify.app/assets/og-image.jpg">
+
+  <script src="../scripts/theme-init.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../scripts/tailwind.config.js"></script>
+
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-bg text-fg font-sans">
+
+  <nav class="sticky top-0 z-40 bg-bg/80 backdrop-blur border-b border-border">
+    <div class="max-w-content mx-auto px-5 md:px-8 py-4 flex items-center justify-between">
+      <a href="../index.html" class="font-sans text-16 font-bold">Иван Веденеев</a>
+      <div class="flex items-center gap-6">
+        <a href="../index.html#projects" class="font-sans text-14 font-medium text-secondary hidden md:inline hover:text-accent-ink transition-colors">Кейсы</a>
+        <a href="../index.html#about"    class="font-sans text-14 font-medium text-secondary hidden md:inline hover:text-accent-ink transition-colors">О себе</a>
+        <a href="../index.html#contact"  class="font-sans text-14 font-medium text-secondary hidden md:inline hover:text-accent-ink transition-colors">Контакты</a>
+        <button id="theme-toggle" aria-label="Переключить тему"
+                class="w-9 h-9 grid place-items-center border border-border rounded-full hover:border-accent-ink transition-colors">
+          <svg class="icon-moon w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sun w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <div class="max-w-content mx-auto px-5 md:px-8 pt-8 md:pt-10">
+      <a href="../index.html#projects"
+         class="group inline-flex items-center gap-3 font-mono text-14 uppercase tracking-wider text-secondary hover:text-fg transition-colors">
+        <span class="inline-block transition-transform duration-200 group-hover:-translate-x-1">←</span>
+        <span>все кейсы</span>
+      </a>
+    </div>
+
+    <!-- CASE HERO -->
+    <section class="max-w-content mx-auto px-5 md:px-8 pt-6 md:pt-10 pb-10 md:pb-14">
+      <p class="meta mb-4 md:mb-6 text-accent-ink">01 / кейс · в разработке прямо сейчас</p>
+      <h1 class="font-sans font-bold tracking-tight text-48 md:text-72">R500</h1>
+      <p class="mt-6 md:mt-8 text-18 md:text-24 text-secondary max-w-prose">
+        Электронный журнал сборки, ремонта, балансировки и испытаний роторного двигателя малой тяги. Заменяю бумажный формуляр с одной подписью на общую историю, которую видят все.
+      </p>
+
+      <dl class="mt-10 md:mt-14 grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-8 border-t border-border pt-6 md:pt-8">
+        <div>
+          <dt class="meta mb-2">роль</dt>
+          <dd class="text-16 md:text-18">Product designer + единственный IT-внедритель</dd>
+        </div>
+        <div>
+          <dt class="meta mb-2">формат</dt>
+          <dd class="text-16 md:text-18">Внутренний B2B-инструмент</dd>
+        </div>
+        <div>
+          <dt class="meta mb-2">начало</dt>
+          <dd class="text-16 md:text-18">2 недели назад: идея → первая раскатка</dd>
+        </div>
+        <div>
+          <dt class="meta mb-2">статус</dt>
+          <dd class="text-16 md:text-18 text-accent-ink font-medium">В разработке · тестируем в цеху</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- COVER -->
+    <section class="max-w-content mx-auto px-5 md:px-8 pb-10 md:pb-14">
+      <figure>
+        <img src="../assets/r500/sborka_step-1.png" alt="R500.UR — экран новой сборки: номер двигателя, дата, исполнитель, шаги операции сверху" class="w-full rounded-lg border border-border" loading="lazy">
+        <figcaption class="mt-3 meta">Журнал R500.UR — начало операции «Сборка». Слева все операции, сверху этапы текущей</figcaption>
+      </figure>
+    </section>
+
+    <!-- 01 — CONTEXT -->
+    <section class="max-w-content mx-auto px-5 md:px-8 py-10 md:py-16 border-t border-border">
+      <p class="meta mb-4 md:mb-6">01 / контекст</p>
+      <h2 class="text-24 md:text-32 font-semibold max-w-prose">Пришёл слесарем-сборщиком, увидел продуктовую проблему</h2>
+      <div class="mt-6 md:mt-8 text-16 md:text-18 text-secondary max-w-prose space-y-5">
+        <p>Устроился на производство слесарем-сборщиком роторных двигателей малой тяги — без единого закрученного винта за плечами до этого. Задача была не «внедрить дизайн», а собирать двигатели руками. Но 5+ лет продуктового мышления не выключаются на проходной.</p>
+        <p>Сборка двигателя R500 — это цепочка операций: сборка, балансировка ротора, испытания, при необходимости — ремонт. Каждую операцию может делать другой человек, часто в другую смену, иногда через несколько дней или недель.</p>
+      </div>
+    </section>
+
+    <!-- 02 — PROBLEM -->
+    <section class="max-w-content mx-auto px-5 md:px-8 py-10 md:py-16 border-t border-border">
+      <p class="meta mb-4 md:mb-6">02 / проблема</p>
+      <h2 class="text-24 md:text-32 font-semibold max-w-prose">Подпись одна, а рук — пять и больше</h2>
+      <div class="mt-6 md:mt-8 text-16 md:text-18 text-secondary max-w-prose space-y-5">
+        <p>Весь процесс фиксировался в бумажном формуляре. Расписывался за сборку — я. Дальше двигатель уходит к другому мастеру на балансировку, потом к испытателю, при браке — к ремонтнику. Формально все эти операции проведут другие люди. Но в документе с самого начала стоит моя подпись.</p>
+        <p>Если через месяц с ротором что-то случится — придут ко мне. Хотя после моей операции его физически трогали ещё пять и больше человек, каждый со своей зоной ответственности, которая нигде отдельно не зафиксирована.</p>
+        <p>Бумага не хранит контекст. Она не показывает, что двигатель уже второй раз идёт по кругу сборка → балансировка → испытания, и что в первый круг ротор не прошёл именно балансировку. Каждый следующий человек в цепочке видит текущую операцию, но не видит историю.</p>
+      </div>
+    </section>
+
+    <!-- 03 — SOLUTION -->
+    <section class="max-w-content mx-auto px-5 md:px-8 py-10 md:py-16 border-t border-border">
+      <p class="meta mb-4 md:mb-6">03 / решение</p>
+      <h2 class="text-24 md:text-32 font-semibold max-w-prose">Один журнал на все операции вместо одной подписи под всеми операциями</h2>
+      <div class="mt-6 md:mt-8 text-16 md:text-18 text-secondary max-w-prose space-y-5">
+        <p>Предложил и навайбкодил простой онлайн-журнал: каждая операция — сборка, ремонт, балансировка, испытания — фиксируется отдельно, человеком, который её реально выполнил. Внутри каждой операции — свои этапы, а не одна галочка «сделано».</p>
+        <p>Здесь роль шире, чем «продуктовый дизайнер». На этом производстве я один и продакт, и IT-внедритель: сам настраиваю программу, сам иду к испытателям, слесарям и руководителям смены за требованиями, сам дорабатываю, когда что-то в цеху работает не так, как казалось на бумаге.</p>
+      </div>
+
+      <div class="mt-8 md:mt-10 text-16 md:text-18 text-secondary max-w-prose space-y-5">
+        <p class="text-fg font-semibold">Что попало в журнал</p>
+        <ul class="space-y-3 mt-4">
+          <li class="flex gap-3">
+            <span class="text-accent-ink shrink-0" aria-hidden="true">—</span>
+            <span><span class="text-fg font-medium">Операции по ролям:</span> сборка, ремонт, балансировка, испытания — каждая закрывается тем, кто её выполнял, а не тем, кто первым расписался в документе.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-accent-ink shrink-0" aria-hidden="true">—</span>
+            <span><span class="text-fg font-medium">Этапы внутри операции:</span> каждая операция разложена на шаги, а не сдаётся одной подписью «готово».</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-accent-ink shrink-0" aria-hidden="true">—</span>
+            <span><span class="text-fg font-medium">История по двигателю:</span> карточка ротора хранит все операции, которые с ним происходили, и кто их выполнял.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-accent-ink shrink-0" aria-hidden="true">—</span>
+            <span><span class="text-fg font-medium">Гипотезы:</span> если инженер меняет правило (момент затяжки, допуск), он публикует гипотезу — и она всплывает над формой во всех отделах. Никаких «а нам не сказали».</span>
+          </li>
+        </ul>
+      </div>
+
+      <figure class="mt-8 md:mt-10">
+        <img src="../assets/r500/remont_step-2.png" alt="Шаг операции «Ремонт»: узлы вал, компрессор, турбина — серийные номера, партия, тип" class="w-full rounded-lg border border-border" loading="lazy">
+        <figcaption class="mt-3 meta">Этапы внутри операции: заполняется только то, что менялось. Шаг «Булава» в ремонте</figcaption>
+      </figure>
+
+      <figure class="mt-6 md:mt-8">
+        <img src="../assets/r500/history.png" alt="Экран «История»: счётчики операций по типам и лог всех записей по двигателю с цветовой маркировкой" class="w-full rounded-lg border border-border" loading="lazy">
+        <figcaption class="mt-3 meta">История: сводка операций по типам и полный лог по каждому двигателю — видно, кто и когда что делал</figcaption>
+      </figure>
+
+      <figure class="mt-6 md:mt-8">
+        <img src="../assets/r500/gipoteza.png" alt="Экран «Гипотеза»: инженер публикует изменение правил с выбором отделов, которых оно касается" class="w-full rounded-lg border border-border" loading="lazy">
+        <figcaption class="mt-3 meta">Гипотеза: изменение правил публикуется один раз и показывается над формами выбранных отделов</figcaption>
+      </figure>
+    </section>
+
+    <!-- 04 — REPEAT CYCLES -->
+    <section class="max-w-content mx-auto px-5 md:px-8 py-10 md:py-16 border-t border-border">
+      <p class="meta mb-4 md:mb-6">04 / логи повторов</p>
+      <h2 class="text-24 md:text-32 font-semibold max-w-prose">Если ротор идёт по второму кругу, история идёт вместе с ним</h2>
+      <div class="mt-6 md:mt-8 text-16 md:text-18 text-secondary max-w-prose space-y-5">
+        <p>Ротор не всегда проходит сборку → балансировку → испытания с первого раза. Бывает второй и третий круг: не прошёл испытания — вернулся на балансировку, не прошла балансировка — вернулся на ремонт.</p>
+        <p>Для таких роторов журнал ведёт отдельный лог циклов. Если двигатель прошёл больше 2–3 кругов, при заполнении текущих испытаний испытатель сразу видит, что происходило в прошлые круги — не нужно поднимать бумажный архив или спрашивать у коллег по цепочке.</p>
+      </div>
+
+      <figure class="mt-8 md:mt-10">
+        <img src="../assets/r500/ispitania_step-1.jpg" alt="Экран испытаний: сетка обкатки по прогонам и панель «История двигателя» со всеми прошлыми операциями" class="w-full rounded-lg border border-border" loading="lazy">
+        <figcaption class="mt-3 meta">Испытания, прогон 5: справа — история двигателя, испытатель видит прошлые круги прямо при заполнении</figcaption>
+      </figure>
+    </section>
+
+    <!-- 05 — ARCHITECTURE -->
+    <section class="max-w-content mx-auto px-5 md:px-8 py-10 md:py-16 border-t border-border">
+      <p class="meta mb-4 md:mb-6">05 / архитектура</p>
+      <h2 class="text-24 md:text-32 font-semibold max-w-prose">Обычный веб-стек и ноутбук вместо сервера</h2>
+      <div class="mt-6 md:mt-8 text-16 md:text-18 text-secondary max-w-prose space-y-5">
+        <p>На производстве нет своей IT-инфраструктуры под подобные внутренние сервисы, и разворачивать её ради pet-проекта одного дизайнера было бы избыточно. Решение — обычный веб-стек (HTML/JS) и локальный сервер: ноутбук, который просто всегда включён и раздаёт журнал по локальной сети.</p>
+        <p>5 планшетов на ключевых точках цеха синхронизируются с этим сервером — все видят одну и ту же историю по каждому двигателю в реальном времени. Интерфейс кроссплатформенный: одинаково открывается на компьютере, планшете и телефоне, так что подключиться может кто угодно с любого устройства в сети, не только с выданных планшетов.</p>
+        <p>Живой сценарий: планшеты заняты — захожу в локалку со своего телефона, вношу запись, и она тут же появляется на всех остальных устройствах. Никакой привязки к «специальному рабочему месту».</p>
+      </div>
+
+      <div class="mt-8 md:mt-10">
+        <div class="grid grid-cols-2 gap-3 md:gap-4 max-w-[560px]">
+          <div class="placeholder aspect-[9/19]">мобильный скриншот · форма операции</div>
+          <div class="placeholder aspect-[9/19]">мобильный скриншот · история</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 — RESULT -->
+    <section class="max-w-content mx-auto px-5 md:px-8 py-10 md:py-16 border-t border-border">
+      <p class="meta mb-4 md:mb-6">06 / статус сейчас</p>
+      <h2 class="text-24 md:text-32 font-semibold max-w-prose">Тестируем в бою прямо в цеху</h2>
+      <div class="mt-6 md:mt-8 text-16 md:text-18 text-secondary max-w-prose space-y-5">
+        <p>Неделя ушла на сбор требований и вайб-кодинг, дальше — раскатка на реальные устройства в цеху. Сейчас журнал не в архиве «сделал и забыл» — он живой: раздаю его на планшеты и даю людям попользоваться в реальной работе, а не на демо.</p>
+        <p>Параллельно собираю обратную связь напрямую от испытателей, слесарей и руководителей смены и дорабатываю функционал в моменте — если этап неудобно закрывать, если не хватает поля, если статус на экране не совпадает с тем, что реально происходит с ротором. Метрик по внедрению пока нет намеренно: рано, сначала инструмент должен стать удобным для тех, кто в нём работает каждый день.</p>
+        <p>Реакция цеха при этом уже конкретная и не вежливая из вежливости: людям это реально нужно. Каждый понимает цену «человеческого фактора» в записях и рад инструменту, который снимает вопрос «кто это делал и когда» с одного человека и распределяет по всем, кто фактически трогал ротор.</p>
+      </div>
+    </section>
+
+    <!-- 07 — REFLECTION -->
+    <section class="max-w-content mx-auto px-5 md:px-8 py-10 md:py-16 border-t border-border">
+      <p class="meta mb-4 md:mb-6">07 / рефлексия</p>
+      <h2 class="text-24 md:text-32 font-semibold max-w-prose">Задача решается не макетом, а распределением ответственности</h2>
+      <div class="mt-6 md:mt-8 text-16 md:text-18 text-secondary max-w-prose space-y-5">
+        <p>Формально запроса на дизайн вообще не было — я слесарь, а не штатный продакт на этом производстве. Задача нашлась там, где обычно её не ищут: в наблюдении за тем, кто физически подписывается за чужую работу. Это тот же навык, что и в других кейсах — не рисовать то, что просят, а разбираться, что на самом деле сломано.</p>
+        <p>Цель — полностью уйти от бумаги. Пока журнал работает параллельно с формуляром, но по мере доверия к системе бумага должна уйти совсем. Кейс намеренно описан как незавершённый: функционал продолжает дорабатываться по фидбеку из цеха, а не заморожен на первой рабочей версии. В работе: расширение ролей (мастер смены видит сводку по всем роторам в цеху разом), уведомления, когда ротор простаивает на операции дольше нормы, и экспорт истории в PDF для тех редких случаев, когда формуляр всё же нужен на бумаге.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-border">
+    <div class="max-w-content mx-auto px-5 md:px-8 py-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <p class="meta">© <span id="year"></span> иван веденеев</p>
+      <p class="meta">навайбкожено руками · html + tailwind</p>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
